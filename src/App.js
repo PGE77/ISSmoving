@@ -11,7 +11,8 @@ const App = () => {
     const requestOptions = {
       method: "POST",
       mode: "no-cors",
-      headers: { "Content-Type": "application/json" }
+      headers: { "Content-Type": "application/json" },
+      
   } 
     const response = await fetch(url , requestOptions);
     const data = await response.json();
