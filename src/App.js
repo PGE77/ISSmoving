@@ -7,7 +7,14 @@ const App = () => {
   const url = "http://api.open-notify.org/iss-now.json";
 
   const getCoordinates = async () => {
-    const response = await fetch(url);
+    
+    const requestOptions = {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(this.tutorial)
+  } 
+    const response = await fetch(url , requestOptions);
     const data = await response.json();
     const iss_long = data.iss_position.longitude;
     const iss_lati = data.iss_position.latitude;
