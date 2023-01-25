@@ -14,7 +14,8 @@ const App = () => {
   //     headers: { "Content-Type": "application/json" }
 
   // } 
-    const response = await fetch(url );
+    const response = await fetch(url, { headers: { Origin: window.location.host }
+    });
     const data = await response.json();
     const iss_long = data.iss_position.longitude;
     const iss_lati = data.iss_position.latitude;
