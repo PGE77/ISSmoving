@@ -4,7 +4,7 @@ const App = () => {
   const [latitude, setLatitude] = useState("");
   const [longitude, setLongitude] = useState("");
   const [urlMap, setUrlMap] = useState("");
-  const url = "https://cors-anywhere.herokuapp.com/corsdemo/http://api.open-notify.org/iss-now.json";
+  const url = "https://cors-anywhere.herokuapp.com/http://api.open-notify.org/iss-now.json";
 
   const getCoordinates = async () => {
     
