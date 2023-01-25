@@ -29,7 +29,7 @@ const App = () => {
   };
   useEffect(() => {
     getCoordinates();
-  }, []);
+  }, [urlMap]);
 
   return (
     <div>
