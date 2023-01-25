@@ -21,15 +21,15 @@ const App = () => {
 
     setLatitude(data.iss_position.latitude);
     setLongitude(data.iss_position.longitude);
-    setInterval(() => {
+   
       setUrlMap(
         `https://frame.mapy.cz/zakladni?x=${iss_long}&y=${iss_lati}&z=1&source=coor&&id=${iss_long}%2C${iss_lati}`
       );
-    }, 5000);
+  
   };
   useEffect(() => {
     getCoordinates();
-  }, [urlMap]);
+  }, []);
 
   return (
     <div>
