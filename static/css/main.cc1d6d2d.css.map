@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.cc1d6d2d.css","mappings":"AAAA,EACA,qBAGA,CAEA,KAEA,cAAc,CACd,QAAU,CAFV,iBAGA,CAEA,OACA,WAAW,CACX,UAGA","sources":["index.css"],"sourcesContent":["*{\nbox-sizing:border-box;\n\n\n}\n\nbody {\ntext-align:center;\nfont-size:30px;\nmargin:0px;\n}\n\niframe{\nborder:none;\nwidth:100%;\n\n\n}\n"],"names":[],"sourceRoot":""}
