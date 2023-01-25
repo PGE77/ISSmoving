@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ISSmoving/static/css/main.b0712f60.css",
-    "main.js": "/ISSmoving/static/js/main.2e282e5f.js",
+    "main.js": "/ISSmoving/static/js/main.b3fb8c68.js",
     "index.html": "/ISSmoving/index.html",
     "main.b0712f60.css.map": "/ISSmoving/static/css/main.b0712f60.css.map",
-    "main.2e282e5f.js.map": "/ISSmoving/static/js/main.2e282e5f.js.map"
+    "main.b3fb8c68.js.map": "/ISSmoving/static/js/main.b3fb8c68.js.map"
   },
   "entrypoints": [
     "static/css/main.b0712f60.css",
-    "static/js/main.2e282e5f.js"
+    "static/js/main.b3fb8c68.js"
   ]
 }
