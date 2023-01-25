@@ -4,7 +4,7 @@ const App = () => {
   const [latitude, setLatitude] = useState("");
   const [longitude, setLongitude] = useState("");
   const [urlMap, setUrlMap] = useState("");
-  const url = "https://api.open-notify.org/iss-now.json";
+  const url = "http://api.open-notify.org/iss-now.json";
 
   const getCoordinates = async () => {
     const response = await fetch(url);
