@@ -4,7 +4,7 @@ const App = () => {
   const [latitude, setLatitude] = useState("");
   const [longitude, setLongitude] = useState("");
   const [urlMap, setUrlMap] = useState("");
-  const url = "http://api.open-notify.org/iss-now.json";
+  const url = "https://cors-anywhere.herokuapp.com/http://api.open-notify.org/iss-now.json";
 
   const getCoordinates = async () => {
     
@@ -14,8 +14,7 @@ const App = () => {
   //     headers: { "Content-Type": "application/json" }
 
   // } 
-    const response = await fetch(url, { headers: { Origin: window.location.host }
-    });
+    const response = await fetch(url);
     const data = await response.json();
     const iss_long = data.iss_position.longitude;
     const iss_lati = data.iss_position.latitude;
