@@ -1,4 +1,18 @@
+*{
+box-sizing:border-box;
+
+
+}
+
 body {
 text-align:center;
 font-size:30px;
+margin:0px;
+}
+
+iframe{
+border:none;
+width:100%;
+
+
 }

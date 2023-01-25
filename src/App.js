@@ -15,7 +15,7 @@ const App = () => {
     setLatitude(data.latitude);
     setLongitude(data.longitude);
 
-    setUrlMap(`https://frame.mapy.cz/zakladni?x=${iss_long}&y=${iss_lati}&z=1&source=coor&&id=${iss_long}%2C${iss_lati}`);
+    setUrlMap(`https://frame.mapy.cz/zakladni?x=${iss_long}&y=${iss_lati}&z=3&source=coor&&id=${iss_long}%2C${iss_lati}`);
   };
   useEffect(() => {
     getCoordinates();
@@ -23,8 +23,9 @@ const App = () => {
 
   return (
     <div>
-      <h1>Zeměpisná šířka: {latitude}</h1>
-      <h1>Zeměpisná délka: {longitude}</h1>
+      <h1>Pozice ISS</h1>
+      <h2>Zeměpisná šířka: {latitude}</h2>
+      <h2>Zeměpisná délka: {longitude}</h2>
 
       <iframe title="ttest" src={urlMap} width="800" height="600"></iframe>
     </div>
